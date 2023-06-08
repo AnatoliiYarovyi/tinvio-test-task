@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter.ttf") format("ttf");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none; /* Убрать подчеркивание */
+  color: inherit; /* Использовать цвет родительского элемента */
+  cursor: pointer; /* Изменить курсор при наведении */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+
+  font-family: "Gilroy";
+  font-style: normal;
+  background-color: #fff;
+  color: #212121;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+
+  min-height: 100vh;
+  max-width: 1340px;
+}
+
+.header {
+  height: 48px;
+  margin-top: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header__block {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  padding-right: 16px;
+}
+
+.header__localization {
+  padding-right: 299px;
+}
+
+.header__lan {
+  padding-right: 4px;
+}
+.header__vector {
+  padding-bottom: 3px;
+}
+
+.header__nav {
+  padding-right: 326px;
+
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  text-align: center;
+}
+
+.header__link:not(:last-child) {
+  margin-right: 72px;
+}
+
+.header__button {
+  padding: 12px 19.35px;
+  background: #ffffff;
+  border-radius: 19.2px;
+
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
