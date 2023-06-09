@@ -40,6 +40,11 @@ p {
   max-width: 1340px;
 }
 
+.decore {
+  position: absolute;
+  z-index: 1;
+}
+
 /* ====== header stiles ====== */
 
 .header {
@@ -105,24 +110,14 @@ p {
   text-align: center;
 }
 
-.header-decor__square,
-.header-decor__stars,
-.header-decor__img,
-.header-decor__desktop,
-.header-decor__phone {
-  position: absolute;
-  z-index: 1;
+.header-decor__square--red {
+  top: -20px;
+  right: -308px;
 }
 
-.header-decor__square--red {
-  top: -80px;
-  right: -495px;
-  width: 1031.82px;
-  height: 1049.93px;
-
-  background: rgba(251, 36, 43, 0.6);
-  border-radius: 136.463px;
-  transform: rotate(-45deg);
+.header-decor__img {
+  top: -20px;
+  right: -308px;
 }
 
 .header-decor__square--silver {
@@ -154,11 +149,6 @@ p {
   left: -70px;
 }
 
-.header-decor__img {
-  top: -20px;
-  right: -345px;
-}
-
 .header-decor__desktop,
 .header-decor__phone {
   z-index: 2;
@@ -166,14 +156,14 @@ p {
 .header-decor__desktop {
   width: 830px;
 
-  top: 40px;
-  right: -305px;
+  top: 35px;
+  right: -275px;
 }
 .header-decor__phone {
   width: 240px;
 
   top: 320px;
-  right: 430px;
+  right: 465px;
 }
 
 /* ====== main stiles ====== */
@@ -184,22 +174,14 @@ p {
   align-items: start;
   flex-direction: column;
   margin-top: 200px;
-
-  position: relative;
 }
 
 .container__item {
+  position: relative;
   z-index: 50;
 }
 .container__item:not(:first-child) {
   margin-top: 414px;
-}
-
-.conteiner__rectangle {
-  position: absolute;
-  top: 300px;
-  left: -250px;
-  z-index: 1;
 }
 
 .container__title {
@@ -334,5 +316,62 @@ p {
   margin-left: 300px;
 }
 .content-block__title--third {
-  margin-top: 5px;
+  margin-top: 25px;
+}
+
+.decore__img--rectangle {
+  top: -430px;
+  left: -254px;
+}
+
+.decore__img--msg,
+.decore__img--note,
+.decore__img--purse,
+.decore__img--msg-to-note,
+.decore__img--note-to-purse {
+  z-index: 51;
+}
+
+.decore__img--msg {
+  top: -40px;
+  left: 280px;
+}
+
+.decore__img--msg-stars {
+  top: -85px;
+  left: 220px;
+}
+
+.decore__img--msg-to-note {
+  top: 45px;
+  left: 325px;
+}
+
+.decore__img--note {
+  top: 200px;
+  left: 280px;
+}
+
+.decore__img--note-stars {
+  top: 90px;
+  left: 510px;
+}
+
+.decore__img--note-to-purse {
+  top: 170px;
+  left: 155px;
+}
+
+.decore__img--purse {
+  top: 240px;
+  left: 5px;
+}
+
+.decore__img--purse-stars-top {
+  top: 220px;
+  left: 90px;
+}
+.decore__img--purse-stars {
+  top: 270px;
+  left: 280px;
 }
