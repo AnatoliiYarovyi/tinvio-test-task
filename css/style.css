@@ -105,8 +105,15 @@ p {
   text-align: center;
 }
 
-.header-decor__square {
+.header-decor__square,
+.header-decor__img,
+.header-decor__desktop,
+.header-decor__phone {
   position: absolute;
+  z-index: 1;
+}
+
+.header-decor__square {
   top: -80px;
   right: -495px;
   width: 1031.82px;
@@ -117,13 +124,29 @@ p {
   background: rgba(251, 36, 43, 0.6);
   border-radius: 136.463px;
   transform: rotate(-45deg);
-  z-index: 1;
 }
 .header-decor__img {
-  position: absolute;
   top: -20px;
   right: -345px;
-  z-index: 1;
+}
+
+.header-decor__desktop,
+.header-decor__phone {
+  z-index: 2;
+  /* transform: rotate(-8deg); */
+}
+.header-decor__desktop {
+  /* width: 762px; */
+  width: 830px;
+
+  top: 40px;
+  right: -305px;
+}
+.header-decor__phone {
+  width: 240px;
+
+  top: 320px;
+  right: 430px;
 }
 
 /* ====== main stiles ====== */
