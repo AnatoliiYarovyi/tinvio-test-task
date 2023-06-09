@@ -106,6 +106,7 @@ p {
 }
 
 .header-decor__square,
+.header-decor__stars,
 .header-decor__img,
 .header-decor__desktop,
 .header-decor__phone {
@@ -146,6 +147,11 @@ p {
   height: 257px;
 
   border-radius: 45px;
+}
+
+.header-decor__stars {
+  top: 205px;
+  left: -70px;
 }
 
 .header-decor__img {
